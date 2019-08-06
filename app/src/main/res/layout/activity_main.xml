@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+    <TableRow android:layout_height="wrap_content" android:background="#F0161212">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/tvDisplay"
+                android:layout_span="4" android:layout_gravity="right" android:gravity="center"
+                android:textColor="#C7BABA" android:textSize="30sp" android:hint="                                "/>
+    </TableRow>
+    <!-- 4 columns -->
+    <TableRow
+            android:id="@+id/row1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+        <Button
+                android:id="@+id/AC"
+                android:onClick="btnOPOnClick"
+                android:layout_column="0"
+                android:layout_span="3"
+                android:text="AC"/>
+        <Button
+                android:id="@+id/Divide"
+                android:onClick="btnOPOnClick"
+                android:layout_column="3"
+                android:text="/"
+                android:layout_width="125dp"/>
+    </TableRow>
+    <TableRow
+            android:id="@+id/row2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+        <Button
+                android:id="@+id/No7"
+                android:onClick="btnOnClick"
+                android:text="7"
+        />
+        <Button
+                android:id="@+id/No8"
+                android:onClick="btnOnClick"
+                android:text="8"/>
+        <Button
+                android:id="@+id/No9"
+                android:onClick="btnOnClick"
+                android:text="9"/>
+        <Button
+                android:id="@+id/Times"
+                android:onClick="btnOPOnClick"
+                android:text="*"/>
+    </TableRow>
+    <!-- EditText spanning 2 columns -->
+
+    <!-- Display this button in 3rd column via layout_column(zero based) -->
+    <TableRow
+            android:id="@+id/row3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+        <Button
+                android:id="@+id/No4"
+                android:onClick="btnOnClick"
+                android:text="4"
+        />
+        <Button
+                android:id="@+id/No5"
+                android:onClick="btnOnClick"
+                android:text="5"/>
+        <Button
+                android:id="@+id/No6"
+                android:onClick="btnOnClick"
+                android:text="6"/>
+        <Button
+                android:id="@+id/Minus"
+                android:onClick="btnOPOnClick"
+                android:text="-"/>
+    </TableRow>
+    <TableRow
+            android:id="@+id/row4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+        <Button
+                android:id="@+id/No1"
+                android:onClick="btnOnClick"
+                android:text="1"
+        />
+        <Button
+                android:id="@+id/No2"
+                android:onClick="btnOnClick"
+                android:text="2"/>
+        <Button
+                android:id="@+id/No3"
+                android:onClick="btnOnClick"
+                android:text="3"/>
+        <Button
+                android:id="@+id/Plus"
+                android:onClick="btnOPOnClick"
+                android:text="+"/>
+    </TableRow>
+    <TableRow
+            android:id="@+id/row5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+        <Button
+                android:id="@+id/No0"
+                android:onClick="btnOnClick"
+                android:layout_column="0"
+                android:layout_span="2"
+                android:text="0"/>
+        <Button
+                android:id="@+id/Decimal"
+                android:onClick="btnOPOnClick"
+                android:layout_column="0"
+                android:layout_span="1"
+                android:text="."/>
+        <Button
+                android:id="@+id/Equals"
+                android:onClick="Equal"
+                android:layout_column="3"
+                android:text="="
+                android:layout_width="125dp"/>
+    </TableRow>
+</TableLayout>
